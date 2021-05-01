@@ -18,29 +18,7 @@ Leakage Management
 Water Quality Management
 Digital Health
 Ultraviolet Radiation Monitoring
-Fall Detection
-Companion Robots
-Medical Fridges
-Patient Surveillance/Remote Patient Monitoring
-Smart Retail
-Supply Chain Control
-Near Field Communication (NFC) Payment
-Layout Optimization
-Smart Product Management
-Smart Workplace
-Sociometric badges
-Smart Homes
-Remote Control Appliances
-Home Intrusion Detection Systems:
-Smart locks
-Motion detection
-Smart Logistics
-Fleet Tracking
-Platooning
-Connected Vehicles
-Smart Metering
-Smart Grid
-Digital Twins
+
 
 
 
