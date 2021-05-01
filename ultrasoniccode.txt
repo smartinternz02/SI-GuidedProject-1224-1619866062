@@ -1,0 +1,47 @@
+#include<Servo.h>
+Servo myservo;
+int trigpin=13;
+int echopin=7;
+
+void setup()
+{
+ pinMode(trigpin,OUTPUT);
+ pinMode(echopin,INPUT);
+
+  Serial.begin(9600);
+  
+  myservo.attach(13);
+}
+
+void loop()
+{
+  digitalWrite(trigpin,HIGH);
+  delay(100);
+  digitalWrite(trigpin,LOW);
+  int dur=pulseIn(echopin,HIGH);
+  int dis=(dur*0.034)/2;
+  Serial.print("the distance is:");
+  Serial.println(dis);
+ 
+  if(dis<100)
+  {
+   for(int pos=0;pos<=180;pos++)
+     myservo.write(pos);
+    delay(100);
+   for(int pos=180;pos>=0;pos--)
+     myservo.write(pos);
+    
+  delay(100);
+  }
+  else
+  {
+    myservo.write(0);
+    delay(100);
+  }
+
+   delay(100);
+  
+}
+
+
+
